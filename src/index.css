@@ -85,3 +85,7 @@
 .circle-number {
   @apply w-12 h-12 rounded-full border-2 border-blue-600 flex items-center justify-center text-blue-600 text-xl font-semibold;
 }
+
+.about-us-gradient {
+  background: linear-gradient(180deg, #1E40AF 0%, #2563EB 100%);
+}
