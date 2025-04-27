@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,24 +6,24 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 6%;  /* #101010 */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 6%;  /* #101010 */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 0 0% 6%;  /* #101010 */
+    --primary: 223 95% 47%;  /* #0649E7 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 223 100% 26%;  /* #022183 */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 14% 96%;  /* #EBF1FF */
+    --muted-foreground: 0 0% 6%;  /* #101010 */
+    --accent: 220 14% 96%;  /* #EBF1FF */
+    --accent-foreground: 0 0% 6%;  /* #101010 */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
+    --border: 220 13% 91%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 223 95% 47%;  /* #0649E7 */
     --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -75,17 +76,17 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, #8B5CF6 0%, #3B82F6 100%);
+  background: linear-gradient(135deg, #0649E7 0%, #022183 100%);
 }
 
 .nav-link {
-  @apply text-white/90 hover:text-white transition-colors;
+  @apply text-[#FEFEFE]/90 hover:text-[#FEFEFE] transition-colors;
 }
 
 .circle-number {
-  @apply w-12 h-12 rounded-full border-2 border-blue-600 flex items-center justify-center text-blue-600 text-xl font-semibold;
+  @apply w-12 h-12 rounded-full border-2 border-[#0649E7] flex items-center justify-center text-[#0649E7] text-xl font-semibold;
 }
 
 .about-us-gradient {
-  background: linear-gradient(180deg, #1E40AF 0%, #2563EB 100%);
+  background: linear-gradient(180deg, #022183 0%, #0649E7 100%);
 }

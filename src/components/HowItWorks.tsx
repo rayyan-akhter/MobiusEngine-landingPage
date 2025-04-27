@@ -20,16 +20,16 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <div className="bg-white py-16 lg:py-24">
+    <div className="bg-[#FEFEFE] py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl font-bold text-blue-600 text-center mb-16">
+        <h2 className="text-3xl lg:text-4xl font-bold text-[#0649E7] text-center mb-16">
           How we work?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {steps.map((step) => (
             <div key={step.number} className="text-center">
               <div className="circle-number mx-auto mb-6">{step.number}</div>
-              <p className="text-gray-800 text-lg">{step.title}</p>
+              <p className="text-[#101010] text-lg">{step.title}</p>
             </div>
           ))}
         </div>

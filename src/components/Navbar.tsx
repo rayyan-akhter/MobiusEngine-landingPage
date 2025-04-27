@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src="/lovable-uploads/8032f335-1378-4798-826f-c3f63ce6349e.png" alt="MobiusEngine" className="h-8" />
-          <span className="ml-2 text-white font-semibold text-xl">MobiusEngine</span>
+          <span className="ml-2 text-[#FEFEFE] font-semibold text-xl">MobiusEngine</span>
         </div>
         
         <div className="hidden lg:flex items-center space-x-8">
@@ -27,7 +27,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <Button variant="secondary" className="bg-white text-blue-600 hover:bg-white/90">
+          <Button variant="secondary" className="bg-[#FEFEFE] text-[#0649E7] hover:bg-[#EBF1FF]">
             Get Started
           </Button>
         </div>

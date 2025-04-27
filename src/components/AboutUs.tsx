@@ -18,9 +18,9 @@ const teamMembers = [
 
 const AboutUs = () => {
   return (
-    <div className="bg-gradient-to-b from-blue-600 to-blue-700 py-16 lg:py-24">
+    <div className="about-us-gradient py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <h2 className="text-3xl lg:text-4xl font-bold text-white mb-16">
+        <h2 className="text-3xl lg:text-4xl font-bold text-[#FEFEFE] mb-16">
           About Us
         </h2>
         
@@ -28,7 +28,7 @@ const AboutUs = () => {
           {teamMembers.map((member, index) => (
             <div key={member.name} className="flex flex-col lg:flex-row items-start gap-8">
               <div className="relative">
-                <div className="w-32 h-32 rounded-full overflow-hidden bg-white">
+                <div className="w-32 h-32 rounded-full overflow-hidden bg-[#FEFEFE]">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -39,21 +39,21 @@ const AboutUs = () => {
                   href="https://linkedin.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="absolute bottom-0 right-0 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
+                  className="absolute bottom-0 right-0 bg-[#FEFEFE] rounded-full p-2 shadow-lg hover:bg-[#EBF1FF] transition-colors"
                 >
-                  <Linkedin className="w-5 h-5 text-blue-600" />
+                  <Linkedin className="w-5 h-5 text-[#0649E7]" />
                 </a>
               </div>
               
-              <div className="text-white">
+              <div className="text-[#FEFEFE]">
                 <p className="text-lg">
                   <strong>{member.name}</strong> {member.description}
                 </p>
                 {member.vision && (
-                  <p className="mt-4 text-white/90">{member.vision}</p>
+                  <p className="mt-4 text-[#FEFEFE]/90">{member.vision}</p>
                 )}
                 {member.additionalInfo && (
-                  <p className="mt-4 text-white/90">{member.additionalInfo}</p>
+                  <p className="mt-4 text-[#FEFEFE]/90">{member.additionalInfo}</p>
                 )}
               </div>
             </div>
@@ -61,11 +61,11 @@ const AboutUs = () => {
         </div>
 
         <div className="mt-12 space-y-4 text-center">
-          <a href="#" className="text-white hover:underline inline-block">
+          <a href="#" className="text-[#FEFEFE] hover:underline inline-block">
             Learn more about our Board of Advisors ↗
           </a>
           <div>
-            <a href="#" className="text-white hover:underline inline-block">
+            <a href="#" className="text-[#FEFEFE] hover:underline inline-block">
               Follow us on our LinkedIn page ↗
             </a>
           </div>
