@@ -6,6 +6,8 @@ import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import PricingPlans from "@/components/PricingPlans";
 import AboutUs from "@/components/AboutUs";
+import ResumeBuilding from "@/components/ResumeBuilding";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -15,10 +17,12 @@ const Index = () => {
         <Hero />
       </div>
       <HowItWorks />
+      <AboutUs />
       <Testimonials />
       <WhyChooseUs />
       <PricingPlans />
-      <AboutUs />
+      <ResumeBuilding />
+      <Footer />
     </div>
   );
 };

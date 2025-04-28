@@ -1,16 +1,18 @@
 
 import { Linkedin } from "lucide-react";
+import Image1 from "../Assets/AboutUs1.png"
+import Image2 from "../Assets/AboutUs2.png"
 
 const teamMembers = [
   {
     name: "Ashwin",
-    image: "/lovable-uploads/9dd7b54d-379f-4571-ae3b-66d48ef4337d.png",
+    image: Image1,
     description: "is the founder of mobiusengine.ai. He is an accomplished senior executive with over 20 years of experience in cloud infrastructure and financial services. With over 2 decades of experience at Google and JP Morgan, Ashwin held various product and GTM roles. Ashwin is an MBA holder from Yale University.",
     vision: "Ashwin's vision with Mobius is to give job seekers a significant advantage in securing the roles of their dreams."
   },
   {
     name: "Nicole",
-    image: "/lovable-uploads/9dd7b54d-379f-4571-ae3b-66d48ef4337d.png",
+    image: Image2,
     description: "is an Executive coach at Mobius specializing in resume builds and career advisory.",
     additionalInfo: "With a B.S. in Business Administration from UC Berkeley and 7+ years of experience in AI-driven product strategy, she has seen firsthand how the proper positioning opens doors. She takes a targeted, results-driven approach to help clients confidently stand out and land roles that truly match their skills and potential."
   }
@@ -18,8 +20,8 @@ const teamMembers = [
 
 const AboutUs = () => {
   return (
-    <div className="about-us-gradient py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="about-us-gradient py-16 lg:py-24 ">
+      <div className="max-w-4xl mx-auto px-6 lg:px-8">
         <h2 className="text-3xl lg:text-4xl font-bold text-[#FEFEFE] mb-16">
           About Us
         </h2>
@@ -28,21 +30,15 @@ const AboutUs = () => {
           {teamMembers.map((member, index) => (
             <div key={member.name} className="flex flex-col lg:flex-row items-start gap-8">
               <div className="relative">
-                <div className="w-32 h-32 rounded-full overflow-hidden bg-[#FEFEFE]">
+                <div className="w-44 h-44 rounded-full overflow-hidden bg-[#FEFEFE] ">
                   <img
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
                   />
+                  <span className="absolute -bottom-3 right-2 w-14 h-14 flex justify-center items-center border rounded-full p-4 backdrop-blur-sm bg-white/30 font-bold text-white ">in</span>
                 </div>
-                <a 
-                  href="https://linkedin.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="absolute bottom-0 right-0 bg-[#FEFEFE] rounded-full p-2 shadow-lg hover:bg-[#EBF1FF] transition-colors"
-                >
-                  <Linkedin className="w-5 h-5 text-[#0649E7]" />
-                </a>
+               
               </div>
               
               <div className="text-[#FEFEFE]">
